@@ -34,23 +34,12 @@ You can use the `image_fetcher.py` module to fetch and display images from a URL
 
 Example:
 
-```python
-from image_fetcher import fetch_image, process_image
-
-url = "https://example.com/image"
-headers = {
-    'Accept': "image/*"
-}
-
-try:
-    image_data = fetch_image(url, headers)
-    image = process_image(image_data)
-    image.show()
-except Exception as e:
-    print("An error has occurred:", e)
+```bash
+source venv/bin/activate
+python3 image_fetcher.py
 ```
 
-The above code fetches an image from the specified URL and displays it.
+The above code fetches an image from the cataas (Cats as a service) api and displays it.
 
 ## Running Tests
 
@@ -81,9 +70,10 @@ Feel free to submit issues or pull requests if you have any improvements or bug 
 
 ## Author
 
-- [Your Name]
+- Hashaam Zafar
 
 ## Acknowledgements
 
 - [Requests Library](https://docs.python-requests.org/en/master/)
 - [Pillow (PIL) Library](https://pillow.readthedocs.io/en/stable/)
+- [Caatas Api](https://cataas.com)
